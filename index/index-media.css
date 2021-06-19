@@ -1,0 +1,354 @@
+@media (min-width: 1025px) {
+  body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+    background-size: 63vw;
+    background-position: 0 14%;
+  }
+  header {
+    height: 25vh;
+  }
+  header .container {
+    padding: 0 10.5em;
+  }
+  header .container nav {
+    position: initial;
+    width: initial;
+    left: initial;
+    top: initial;
+    height: initial;
+    overflow: initial;
+  }
+  header .container nav .container {
+    padding: 0;
+    text-align: initial;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    background-color: transparent;
+  }
+  header .container nav .container a {
+    color: #333136;
+    font-size: .9rem;
+    pointer-events: initial;
+    opacity: 1;
+  }
+  header .container nav .container a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: none;
+    transition: none;
+  }
+  header .container .menu {
+    display: none;
+  }
+  #hero {
+    margin: 0 10.5em;
+    border-radius: 20px;
+    height: 640px;
+  }
+  #hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: initial;
+    padding: 0 4.5em;
+  }
+  #hero .container .hero-text h1 {
+    font-size: 3.3vw;
+  }
+  #hero .container .hero-text p {
+    width: 70%;
+  }
+  #hero .container .hero-text a:hover {
+    color: white;
+    background-color: #FFAD9B;
+  }
+  #portfolio .container {
+    padding-left: 10.5em;
+    padding-right: 10.5em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #portfolio .container .project {
+    height: 308px;
+  }
+  #portfolio .container .project:first-child {
+    height: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+  #portfolio .container .project:last-child {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  #portfolio .container .web {
+    background-image: url(/assets/home/desktop/image-web-design-large.jpg);
+  }
+  #portfolio .container .web:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 129, 106, 0.6))), url(/assets/home/desktop/image-web-design-large.jpg);
+    background: linear-gradient(rgba(231, 129, 106, 0.6)), url(/assets/home/desktop/image-web-design-large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #portfolio .container .app {
+    background-image: url(/assets/home/desktop/image-app-design.jpg);
+  }
+  #portfolio .container .app:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 129, 106, 0.6))), url(/assets/home/desktop/image-app-design.jpg);
+    background: linear-gradient(rgba(231, 129, 106, 0.6)), url(/assets/home/desktop/image-app-design.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #portfolio .container .graphic {
+    background-image: url(/assets/home/desktop/image-graphic-design.jpg);
+  }
+  #portfolio .container .graphic:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 129, 106, 0.6))), url(/assets/home/desktop/image-graphic-design.jpg);
+    background: linear-gradient(rgba(231, 129, 106, 0.6)), url(/assets/home/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #approach .container {
+    padding: 0 10.5em;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #approach .container .individual-approach img {
+    width: 60%;
+  }
+  #get-in-touch .container {
+    padding: 0 10.5em;
+  }
+  #get-in-touch .container .wrapper {
+    text-align: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+    background-position: 22em -6em;
+    background-size: 47em;
+  }
+  #get-in-touch .container .wrapper .text {
+    margin: 0;
+    width: 50%;
+  }
+  #get-in-touch .container .wrapper a:hover {
+    color: white;
+    background-color: #FFAD9B;
+  }
+  footer .container {
+    padding-left: 10.5em;
+    padding-right: 10.5em;
+    text-align: initial;
+  }
+  footer .container .logo-and-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 2em;
+  }
+  footer .container .logo-and-links .footer-logo {
+    padding: 0;
+    border-bottom: initial;
+  }
+  footer .container .logo-and-links .nav-links {
+    margin: 0;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  footer .container .logo-and-links .nav-links a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  footer .container .info {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    gap: 6em;
+  }
+  footer .container .info .socials {
+    margin-left: auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  footer .container .info .socials a svg:hover path {
+    fill: #FFAD9B;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 15vh;
+  }
+  header .container nav {
+    position: initial;
+    width: initial;
+    left: initial;
+    top: initial;
+    height: initial;
+    overflow: initial;
+  }
+  header .container nav .container {
+    padding: 0;
+    text-align: initial;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    background-color: transparent;
+  }
+  header .container nav .container a {
+    color: #333136;
+    font-size: .9rem;
+    pointer-events: initial;
+    opacity: 1;
+  }
+  header .container .menu {
+    display: none;
+  }
+  #hero {
+    margin: 0 1.5em;
+    border-radius: 20px;
+  }
+  #hero .container .hero-text p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hero .container .phone img {
+    -webkit-transform: scale(1) translateY(-6em);
+            transform: scale(1) translateY(-6em);
+  }
+  #portfolio .container .web {
+    background-image: url(/assets/home/tablet/image-web-design.jpg);
+  }
+  #portfolio .container .app {
+    background-image: url(/assets/home/tablet/image-app-design.jpg);
+  }
+  #portfolio .container .graphic {
+    background-image: url(/assets/home/tablet/image-graphic-design.jpg);
+  }
+  #approach .container .individual-approach {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-position-x: 0;
+  }
+  #approach .container .individual-approach .approach-text {
+    text-align: left;
+  }
+  #get-in-touch .container .wrapper {
+    padding: 3em 6em 4em;
+  }
+  footer .container {
+    text-align: initial;
+  }
+  footer .container .logo-and-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 2em;
+  }
+  footer .container .logo-and-links .footer-logo {
+    padding: 0;
+    border-bottom: initial;
+  }
+  footer .container .logo-and-links .nav-links {
+    margin: 0;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  footer .container .logo-and-links .nav-links a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  footer .container .info {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    gap: 6em;
+  }
+  footer .container .info .socials {
+    margin-left: auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  #hero .container .phone img {
+    -webkit-transform: scale(0.78) translateY(-21em);
+            transform: scale(0.78) translateY(-21em);
+  }
+}
+
+@media (min-width: 280px) and (max-width: 280px) {
+  header .container .logo a img {
+    width: 142px;
+  }
+  header .container .menu img {
+    width: 75%;
+  }
+  #hero .container .hero-text h1 {
+    font-size: 1.4rem;
+  }
+  #portfolio .container .project h1 {
+    font-size: 1.4rem;
+  }
+  #portfolio .container .project h3 {
+    font-size: .7rem;
+  }
+  #approach .container .individual-approach img {
+    width: 100%;
+  }
+  #get-in-touch .container .wrapper .text h1 {
+    font-size: 1.7rem;
+  }
+}
+/*# sourceMappingURL=index-media.css.map */
