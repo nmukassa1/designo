@@ -1,0 +1,244 @@
+@import 'mixins&variables-about';
+
+*{
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3{
+    font-weight: 500;
+}
+p{
+    font-weight: 400;
+    line-height: 1.6em;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.container{
+    padding: 0 1.5em;
+    text-align: center;
+}
+
+
+//////
+
+
+header{
+    height: 14vh;
+    .container{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+        max-height: 100vh;
+        .logo{
+            img{
+                width: 202px;
+                height: auto;
+            }
+        }
+        nav{
+            transition: all .5s ease-in-out;
+            position: absolute;
+            width: 100vw;
+            left: 0;
+            top: 14vh;
+            height: 0;
+            overflow: hidden;
+            .container{
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: initial;
+                background-color: $secondaryBlack;
+                gap: 1.5em;
+                padding-top: 2.5em;
+                padding-bottom: 2.5em;
+                a{
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-size: 1.5rem;
+                    pointer-events: none;
+                    opacity: 0;
+                    transition: all .5s ease-in-out;
+                } .dropdownLinksActive{
+                    opacity: 1;
+                    pointer-events: initial;
+                }
+            }
+        } .navActive{
+            height: 233px;
+        }
+    }
+}
+
+#hero{
+    .img{
+        height: 320px;
+        background-image: url(../../assets/about/mobile/image-about-hero.jpg);
+        @include bgPropeties;
+    }
+    #about{
+        padding: 4em 0;
+        background-color: $primaryPeach;
+        background-image: url(../../assets/shared/desktop/bg-pattern-small-circle.svg);
+        @include bgPropeties;
+        background-position: 4em -8em;
+        background-size: 19em;
+        .container{
+            h1{
+                color: white;
+                font-size: 2rem
+            }
+            p{
+                @include multiPageHeroParagraph;
+            }
+        }
+    }
+}
+
+#talent{
+    .img{
+        background-image: url(../../assets/about/mobile/image-world-class-talent.jpg);
+        @include bgPropeties;
+        height: 320px;
+    }
+    .talent{
+        background-image: url(../../assets/shared/desktop/bg-pattern-three-circles.svg);
+        @include bgPropeties;
+        @include peachContainer;
+        .container{
+            h1{
+                @include peachHeader;
+            }
+        }
+    }
+}
+
+#locations{
+    padding: 7em 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 7em;
+        .country{
+            background-image: url(../../assets/home/desktop/bg-pattern-hero-home.svg);
+            @include bgPropeties;
+            background-size: 15em;
+            background-position-y: 0;
+            img{
+                width: 70%;
+                margin: 0 auto;
+            }
+            h2{
+                letter-spacing: 5px;
+                font-size: 1.25rem;
+                text-transform: uppercase;
+                margin: 2em 0 3em;
+            }
+            a{
+                @include btn(white, $primaryPeach);
+            }
+        }
+    }
+}
+
+#real-deal{
+    .img{
+        height: 320px;
+        background-image: url(../../assets/about/mobile/image-real-deal.jpg);
+        @include bgPropeties;
+    }
+    .text{
+        @include bgPropeties;
+        @include peachContainer;
+        .container{
+            h1{
+                @include peachHeader;
+            }
+        }
+    }
+}
+
+#get-in-touch{
+    position: relative;
+    top: 10em;
+    .container{
+        .wrapper{
+            background-color: $primaryPeach;
+            background-image: url(../../assets/shared/desktop/bg-pattern-call-to-action.svg);
+            @include bgPropeties;
+            background-size: 72em;
+            background-position-x: -20em;
+            padding-top: 3em;
+            padding-bottom: 4em;
+            border-radius: 15px;
+            h1, p{
+                color: white
+            }
+            h1{
+                font-size: 2rem;
+                margin-bottom: .5em;
+            }
+            p{
+                margin-bottom: 3em;
+            }
+            a{
+                @include btn(black, white);
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $black;
+    .container{
+        padding-top: 15em;
+        padding-bottom: 4em;
+        .logo-and-links{
+            .footer-logo{
+                padding-bottom: 1.5em;
+                border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+                a{
+                    img{
+                        width: 202px;
+                        height: auto;
+                    }
+                }
+            }
+            .nav-links{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                margin-top: 2em;
+                a{
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-size: .87rem;
+                }
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            margin-top: 3em;
+            gap: 2em;
+            .address{
+                color: hsla(0, 0%, 100%, .5);
+            }
+            .socials{
+                display: flex;
+                justify-content: center;
+                gap: 1em;
+                align-items: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,400 @@
+@media (min-width: 1025px) {
+  .img {
+    width: 100%;
+  }
+  body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../assets/shared/desktop/bg-pattern-leaf.svg), url(../../assets/shared/desktop/bg-pattern-leaf.svg);
+    background-size: 63vw;
+    background-position: 0 14%, 160% 60%;
+  }
+  header {
+    height: 25vh;
+  }
+  header .container {
+    padding: 0 10.5em;
+  }
+  header .container nav {
+    position: initial;
+    width: initial;
+    left: initial;
+    top: initial;
+    height: initial;
+    overflow: initial;
+  }
+  header .container nav .container {
+    padding: 0;
+    text-align: initial;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    background-color: transparent;
+  }
+  header .container nav .container a {
+    color: #333136;
+    font-size: .9rem;
+    pointer-events: initial;
+    opacity: 1;
+  }
+  header .container nav .container a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: none;
+    transition: none;
+  }
+  header .container .menu {
+    display: none;
+  }
+  #hero {
+    margin: 0 10.5em 8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #hero .img {
+    height: 480px;
+    background-image: url(../../assets/about/desktop/image-about-hero.jpg);
+    border-radius: 0 20px 20px 0;
+    width: 476px;
+  }
+  #hero #about {
+    padding: 0;
+    border-radius: 20px 0 0 20px;
+    width: 635px;
+    background-position: 0;
+    background-size: 40em;
+  }
+  #hero #about .container {
+    text-align: left;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+  }
+  #talent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 10.5em;
+  }
+  #talent .img {
+    height: 640px;
+    background-image: url(../../assets/about/desktop/image-world-class-talent.jpg);
+    border-radius: 20px 0 0 20px;
+    width: 476px;
+  }
+  #talent .talent {
+    border-radius: 0 20px 20px 0;
+    width: 635px;
+    background-size: 35em;
+    background-position: -5em 5em;
+  }
+  #talent .talent .container {
+    text-align: left;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  #locations .container {
+    padding: 0 10.5em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #locations .container .country {
+    width: 100%;
+    background-size: 16.6vw;
+  }
+  #locations .container .country img {
+    width: 80%;
+  }
+  #locations .container .country a:hover {
+    background-color: #FFAD9B;
+  }
+  #real-deal {
+    margin: 0 10.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #real-deal .img {
+    height: 640px;
+    width: 476px;
+    border-radius: 0 20px 20px 0;
+    background-image: url(../../assets/about/desktop/image-real-deal.jpg);
+  }
+  #real-deal .text {
+    background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-position: 0 22em;
+    background-size: 36em;
+    padding: 0;
+    width: 635px;
+    border-radius: 20px 0 0 20px;
+  }
+  #real-deal .text .container {
+    text-align: left;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  #get-in-touch .container {
+    padding: 0 10.5em;
+  }
+  #get-in-touch .container .wrapper {
+    text-align: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+    background-position: 22em -6em;
+    background-size: 47em;
+  }
+  #get-in-touch .container .wrapper .text {
+    margin: 0;
+    width: 50%;
+  }
+  #get-in-touch .container .wrapper a:hover {
+    color: white;
+    background-color: #FFAD9B;
+  }
+  footer .container {
+    padding-left: 10.5em;
+    padding-right: 10.5em;
+    text-align: initial;
+  }
+  footer .container .logo-and-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 2em;
+  }
+  footer .container .logo-and-links .footer-logo {
+    padding: 0;
+    border-bottom: initial;
+  }
+  footer .container .logo-and-links .nav-links {
+    margin: 0;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  footer .container .logo-and-links .nav-links a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  footer .container .info {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    gap: 6em;
+  }
+  footer .container .info .socials {
+    margin-left: auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  footer .container .info .socials a svg:hover path {
+    fill: #FFAD9B;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 15vh;
+  }
+  header .container nav {
+    position: initial;
+    width: initial;
+    left: initial;
+    top: initial;
+    height: initial;
+    overflow: initial;
+  }
+  header .container nav .container {
+    padding: 0;
+    text-align: initial;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    background-color: transparent;
+  }
+  header .container nav .container a {
+    color: #333136;
+    font-size: .9rem;
+    pointer-events: initial;
+    opacity: 1;
+  }
+  header .container .menu {
+    display: none;
+  }
+  #hero {
+    margin: 0 1.5em;
+  }
+  #hero .img {
+    border-radius: 20px 20px 0 0;
+    background-image: url(../../assets/about/tablet/image-about-hero.jpg);
+  }
+  #hero #about {
+    border-radius: 0 0 20px 20px;
+  }
+  #hero #about .container {
+    padding: 0 4em;
+  }
+  #talent {
+    margin: 8em 1.5em 0;
+  }
+  #talent .img {
+    border-radius: 20px 20px 0 0;
+    background-image: url(../../assets/about/tablet/image-world-class-talent.jpg);
+  }
+  #talent .talent {
+    border-radius: 0 0 20px 20px;
+  }
+  #talent .talent .container {
+    padding: 0 4em;
+  }
+  #locations .container .country {
+    background-size: 17em;
+  }
+  #locations .container .country img {
+    width: 37%;
+  }
+  #real-deal {
+    margin: 0 1.5em;
+  }
+  #real-deal .img {
+    border-radius: 20px 20px 0 0;
+    background-image: url(../../assets/about/tablet/image-real-deal.jpg);
+  }
+  #real-deal .text {
+    border-radius: 0 0 20px 20px;
+  }
+  #real-deal .text .container {
+    padding: 0 4em;
+  }
+  #get-in-touch .container .wrapper {
+    padding: 3em 6em 4em;
+  }
+  footer .container {
+    text-align: initial;
+  }
+  footer .container .logo-and-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 2em;
+  }
+  footer .container .logo-and-links .footer-logo {
+    padding: 0;
+    border-bottom: initial;
+  }
+  footer .container .logo-and-links .nav-links {
+    margin: 0;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  footer .container .info {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    gap: 6em;
+  }
+  footer .container .info .socials {
+    margin-left: auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 280px) {
+  header .container .logo a img {
+    width: 142px;
+  }
+  header .container .menu img {
+    width: 75%;
+  }
+  #locations .container .country {
+    background-size: 14em;
+  }
+  #locations .container .country img {
+    width: 100%;
+  }
+  #get-in-touch .container .wrapper .text h1 {
+    font-size: 1.7rem;
+  }
+}
+/*# sourceMappingURL=about-media.css.map */

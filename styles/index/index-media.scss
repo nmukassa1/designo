@@ -1,0 +1,397 @@
+@import 'mixins&variables';
+
+@media (min-width: 1025px) {
+    
+    body{
+        @include bgPropeties;
+        background-image: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+        background-size: 63vw;
+        background-position: 0 14%;
+    }
+
+    header{
+        height: 25vh;
+        .container{
+            padding: 0 10.5em;
+            nav{
+                position: initial;
+                width: initial;
+                left: initial;
+                top: initial;
+                height: initial;
+                overflow: initial;
+                .container{
+                    padding: 0;
+                    text-align: initial;
+                    flex-direction: initial;
+                    background-color: transparent;
+                    a{
+                        color: $secondaryBlack;
+                        font-size: .9rem;
+                        pointer-events: initial;
+                        opacity: 1;
+                        &:hover{
+                            border-bottom: 1px solid hsla(0, 0%, 0%, .3);
+                            transition: none;
+                        }
+                    }
+                }
+            }
+            .menu{
+                display: none;
+            }
+        }
+    }
+
+    #hero{
+        margin: 0 10.5em;
+        border-radius: 20px;
+        height: 640px;
+        .container{
+            display: flex;
+            text-align: initial;
+            padding: 0 4.5em;
+            .hero-text{
+                h1{
+                    font-size: 3.3vw;
+                }
+                p{
+                    width: 70%;
+                }
+                a{
+                    &:hover{
+                        color: white;
+                        background-color: $lightPeach;
+                    }
+                }
+            }
+        }
+    }
+
+    #portfolio{
+        .container{
+            padding-left: 10.5em;
+            padding-right: 10.5em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .project{
+                height: 308px;
+                &:first-child{
+                    height: 100%;
+                    grid-row: 1/3;
+                }
+                &:last-child{
+                    grid-column: 2/3;
+                }
+            }
+            .web{
+                background-image: url(../../assets/home/desktop/image-web-design-large.jpg);
+                &:hover{
+                    background: linear-gradient($primaryPeachHover),url(../../assets/home/desktop/image-web-design-large.jpg);
+                    @include bgPropeties;
+                }
+            }
+            .app{
+                background-image: url(../../assets/home/desktop/image-app-design.jpg);
+                &:hover{
+                    background: linear-gradient($primaryPeachHover),url(../../assets/home/desktop/image-app-design.jpg);
+                    @include bgPropeties;
+                }
+            }
+            .graphic{
+                background-image: url(../../assets/home/desktop/image-graphic-design.jpg);
+                &:hover{
+                    background: linear-gradient($primaryPeachHover),url(../../assets/home/desktop/image-graphic-design.jpg);
+                    @include bgPropeties;
+                }
+            }
+        }
+    }
+
+    #approach{
+        .container{
+            padding: 0 10.5em;
+            flex-direction: initial;
+            align-items: center;
+            .individual-approach{
+                img{
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+    #get-in-touch{
+        .container{
+            padding: 0 10.5em;
+            .wrapper{
+                text-align: initial;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 4.5em;
+                padding-right: 4.5em;
+                background-position: 22em -6em;
+                background-size: 47em;
+                .text{
+                    margin: 0;
+                    width: 50%;
+                }
+                a{
+                    &:hover{
+                        color: white;
+                        background-color: $lightPeach;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .container{
+            padding-left: 10.5em;
+            padding-right: 10.5em;
+            text-align: initial;
+            .logo-and-links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+                padding-bottom: 2em;
+                .footer-logo{
+                    padding: 0;
+                    border-bottom: initial;
+                }
+                .nav-links{
+                    margin: 0;
+                    flex-direction: initial;
+                    a{
+                        &:hover{
+                            border-bottom: 1px solid hsla(0, 0%, 100%, .3);    
+                        }    
+                    }
+                }
+            }
+            .info{
+                flex-direction: initial;
+                gap: 6em;
+                .socials{
+                    margin-left: auto;
+                    align-items: flex-end;
+                    a{
+                        svg{
+                            &:hover{
+                                path{
+                                    fill: $lightPeach;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    header{
+        height: 15vh;
+        .container{
+            nav{
+                position: initial;
+                width: initial;
+                left: initial;
+                top: initial;
+                height: initial;
+                overflow: initial;
+                .container{
+                    padding: 0;
+                    text-align: initial;
+                    flex-direction: initial;
+                    background-color: transparent;
+                    a{
+                        color: $secondaryBlack;
+                        font-size: .9rem;
+                        pointer-events: initial;
+                        opacity: 1;
+                    }
+                }
+            }
+            .menu{
+                display: none;
+            }
+        }
+    }   
+
+    #hero{
+        margin: 0 1.5em;
+        border-radius: 20px;
+        .container{
+            .hero-text{
+                p{
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .phone{
+                img{
+                    transform: scale(1) translateY(-6em);
+                }
+            }
+        }
+    }
+
+    #portfolio{
+        .container{
+            .web{
+                background-image: url(/assets/home/tablet/image-web-design.jpg);
+            }
+            .app{
+                background-image: url(/assets/home/tablet/image-app-design.jpg);
+            }
+            .graphic{
+                background-image: url(/assets/home/tablet/image-graphic-design.jpg);
+            }
+        }
+    }
+
+    #approach{
+        .container{
+            .individual-approach{
+                display: flex;
+                gap: 3em;
+                align-items: center;
+                background-position-x: 0;
+                .approach-text{
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    #get-in-touch{
+        .container{
+            .wrapper{
+                padding: 3em 6em 4em;
+            }
+        }
+    }
+    
+    footer{
+        .container{
+            text-align: initial;
+            .logo-and-links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+                padding-bottom: 2em;
+                .footer-logo{
+                    padding: 0;
+                    border-bottom: initial;
+                }
+                .nav-links{
+                    margin: 0;
+                    flex-direction: initial;
+                    a{
+                        &:hover{
+                            border-bottom: 1px solid hsla(0, 0%, 100%, .3);    
+                        }    
+                    }
+                }
+            }
+            .info{
+                flex-direction: initial;
+                gap: 6em;
+                .socials{
+                    margin-left: auto;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+
+}
+
+
+//IPAD PRO
+@media (min-width: 1024px) and (max-width: 1024px){
+    #hero{
+        .container{
+            .phone{
+                img{
+                    transform: scale(.78) translateY(-21em);
+                }
+            }
+        }
+    }
+}
+
+//Galaxy Fold
+@media (min-width: 280px) and (max-width: 280px) {
+    header{
+        .container{
+            .logo{
+                a{
+                    img{
+                        width: 142px;
+                    }
+                }
+            }
+            .menu{
+                img{
+                    width: 75%;
+                }
+            }
+        }
+    }
+
+    #hero{
+        .container{
+            .hero-text{
+                h1{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    #portfolio{
+        .container{
+            .project{
+                h1{
+                    font-size: 1.4rem;
+                }
+                h3{
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+
+    #approach{
+        .container{
+            .individual-approach{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #get-in-touch{
+        .container{
+            .wrapper{
+                .text{
+                    h1{
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

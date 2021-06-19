@@ -1,0 +1,333 @@
+@media (min-width: 1025px) {
+  .img {
+    width: 100%;
+  }
+  header {
+    height: 25vh;
+  }
+  header .container {
+    padding: 0 10.5em;
+  }
+  header .container nav {
+    position: initial;
+    width: initial;
+    left: initial;
+    top: initial;
+    height: initial;
+    overflow: initial;
+  }
+  header .container nav .container {
+    padding: 0;
+    text-align: initial;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    background-color: transparent;
+  }
+  header .container nav .container a {
+    color: #333136;
+    font-size: .9rem;
+    pointer-events: initial;
+    opacity: 1;
+  }
+  header .container nav .container a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: none;
+    transition: none;
+  }
+  header .container .menu {
+    display: none;
+  }
+  #location {
+    padding: 0 10.5em;
+  }
+  #location .canada, #location .australia, #location .uk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 326px;
+    gap: 2em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #location .canada .img, #location .australia .img, #location .uk .img {
+    width: 350px;
+    border-radius: 20px;
+  }
+  #location .canada .container, #location .australia .container, #location .uk .container {
+    background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-size: 34em;
+    background-position: 0 3.5em;
+    width: 730px;
+    text-align: left;
+    padding: 5em 6.5em;
+    border-radius: 20px;
+  }
+  #location .canada .container .info, #location .australia .container .info, #location .uk .container .info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #location .australia {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #real-deal {
+    margin: 0 10.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  #real-deal .img {
+    height: 640px;
+    width: 476px;
+    border-radius: 0 20px 20px 0;
+    background-image: url(../../assets/about/desktop/image-real-deal.jpg);
+  }
+  #real-deal .text {
+    background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-position: 0 22em;
+    background-size: 36em;
+    padding: 0;
+    width: 635px;
+    border-radius: 20px 0 0 20px;
+  }
+  #real-deal .text .container {
+    text-align: left;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  #get-in-touch .container {
+    padding: 0 10.5em;
+  }
+  #get-in-touch .container .wrapper {
+    text-align: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+    background-position: 22em -6em;
+    background-size: 47em;
+  }
+  #get-in-touch .container .wrapper .text {
+    margin: 0;
+    width: 50%;
+  }
+  #get-in-touch .container .wrapper a:hover {
+    color: white;
+    background-color: #FFAD9B;
+  }
+  footer .container {
+    padding-left: 10.5em;
+    padding-right: 10.5em;
+    text-align: initial;
+  }
+  footer .container .logo-and-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 2em;
+  }
+  footer .container .logo-and-links .footer-logo {
+    padding: 0;
+    border-bottom: initial;
+  }
+  footer .container .logo-and-links .nav-links {
+    margin: 0;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  footer .container .logo-and-links .nav-links a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  footer .container .info {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    gap: 6em;
+  }
+  footer .container .info .socials {
+    margin-left: auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  footer .container .info .socials a svg:hover path {
+    fill: #FFAD9B;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 15vh;
+  }
+  header .container nav {
+    position: initial;
+    width: initial;
+    left: initial;
+    top: initial;
+    height: initial;
+    overflow: initial;
+  }
+  header .container nav .container {
+    padding: 0;
+    text-align: initial;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    background-color: transparent;
+  }
+  header .container nav .container a {
+    color: #333136;
+    font-size: .9rem;
+    pointer-events: initial;
+    opacity: 1;
+  }
+  header .container .menu {
+    display: none;
+  }
+  #hero {
+    margin: 0 1.5em;
+  }
+  #hero .img {
+    border-radius: 20px 20px 0 0;
+    background-image: url(../../assets/about/tablet/image-about-hero.jpg);
+  }
+  #hero #about {
+    border-radius: 0 0 20px 20px;
+  }
+  #hero #about .container {
+    padding: 0 4em;
+  }
+  #location {
+    margin: 0 1.5em;
+    gap: 8em;
+  }
+  #location .canada, #location .australia, #location .uk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2em;
+  }
+  #location .canada .img, #location .australia .img, #location .uk .img {
+    border-radius: 20px;
+  }
+  #location .canada .container, #location .australia .container, #location .uk .container {
+    text-align: left;
+    border-radius: 20px;
+    padding: 4em 5em;
+    background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-position: 0 bottom;
+    background-size: 33em;
+  }
+  #location .canada .container .info, #location .australia .container .info, #location .uk .container .info {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    gap: 6em;
+  }
+  #get-in-touch .container .wrapper {
+    padding: 3em 6em 4em;
+  }
+  footer .container {
+    text-align: initial;
+  }
+  footer .container .logo-and-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 2em;
+  }
+  footer .container .logo-and-links .footer-logo {
+    padding: 0;
+    border-bottom: initial;
+  }
+  footer .container .logo-and-links .nav-links {
+    margin: 0;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  footer .container .info {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    gap: 6em;
+  }
+  footer .container .info .socials {
+    margin-left: auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 280px) {
+  header .container .logo a img {
+    width: 142px;
+  }
+  header .container .menu img {
+    width: 75%;
+  }
+  #get-in-touch .container .wrapper .text h1 {
+    font-size: 1.7rem;
+  }
+}
+/*# sourceMappingURL=location-media.css.map */
