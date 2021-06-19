@@ -1,0 +1,272 @@
+@import 'mixins&variables-contact';
+
+@media (min-width: 1025px) {
+    
+    .img{
+        width: 100%;
+    }
+
+    body{
+        @include bgPropeties;
+        background-image: url(/assets/shared/desktop/bg-pattern-leaf.svg);
+        background-size: 63vw;
+        background-position: 100% 71%;
+    }
+
+    header{
+        height: 25vh;
+        .container{
+            padding: 0 10.5em;
+            nav{
+                position: initial;
+                width: initial;
+                left: initial;
+                top: initial;
+                height: initial;
+                overflow: initial;
+                .container{
+                    padding: 0;
+                    text-align: initial;
+                    flex-direction: initial;
+                    background-color: transparent;
+                    a{
+                        color: $secondaryBlack;
+                        font-size: .9rem;
+                        pointer-events: initial;
+                        opacity: 1;
+                        &:hover{
+                            border-bottom: 1px solid hsla(0, 0%, 0%, .3);
+                            transition: none;
+                        }
+                    }
+                }
+            }
+            .menu{
+                display: none;
+            }
+        }
+    }
+
+    #contact-us{
+        margin: 0 10.5em;
+        border-radius: 20px;
+        padding: 4em 0;
+        background-image: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg);
+        background-position: 0;
+        background-size: 37em;
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5em;
+            width: 80%;
+            margin: 0 auto;
+            .text{
+                padding-top: 4em;
+                text-align: left;
+            }
+            #customer-form{
+                #submit{
+                    align-self: flex-end;
+                    margin-left: 0;
+                    margin-right: 0;
+                    &:hover{
+                        color: white;
+                        background-color: $lightPeach;
+                    }
+                }
+            }
+        }
+    }
+  
+  #locations{
+      .container{
+          padding: 0 10.5em;
+          flex-direction: row;
+          align-items: center;
+          .country{
+              width: 100%;
+              background-size: 16.6vw;
+              img{
+                  width: 80%;
+                }
+                a{
+                    &:hover{
+                        background-color: $lightPeach;
+                    }
+                }
+            }
+        }
+    }
+    
+ 
+    footer{
+        .container{
+            padding-left: 10.5em;
+            padding-right: 10.5em;
+            text-align: initial;
+            .logo-and-links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+                padding-bottom: 2em;
+                .footer-logo{
+                    padding: 0;
+                    border-bottom: initial;
+                }
+                .nav-links{
+                    margin: 0;
+                    flex-direction: initial;
+                    a{
+                        &:hover{
+                            border-bottom: 1px solid hsla(0, 0%, 100%, .3);    
+                        }    
+                    }
+                }
+            }
+            .info{
+                flex-direction: initial;
+                gap: 6em;
+                .socials{
+                    margin-left: auto;
+                    align-items: flex-end;
+                    a{
+                        svg{
+                            &:hover{
+                                path{
+                                    fill: $lightPeach;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    header{
+        height: 15vh;
+        .container{
+            nav{
+                position: initial;
+                width: initial;
+                left: initial;
+                top: initial;
+                height: initial;
+                overflow: initial;
+                .container{
+                    padding: 0;
+                    text-align: initial;
+                    flex-direction: initial;
+                    background-color: transparent;
+                    a{
+                        color: $secondaryBlack;
+                        font-size: .9rem;
+                        pointer-events: initial;
+                        opacity: 1;
+                    }
+                }
+            }
+            .menu{
+                display: none;
+            }
+        }
+    }   
+
+   #contact-us{
+       margin: 0 1.5em;
+       border-radius: 20px;
+       .container{
+           text-align: initial;
+           form{
+               #submit{
+                   align-self: flex-end;
+                   margin-right: 0;
+                   margin-left: 0;
+               }
+           }
+       }
+   }
+ 
+   #locations{
+    .container{
+        .country{
+            background-size: 17em;
+            img{
+                width: 37%;
+            }
+        }
+    }
+}
+
+    
+
+    
+    footer{
+        .container{
+            text-align: initial;
+            .logo-and-links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+                padding-bottom: 2em;
+                .footer-logo{
+                    padding: 0;
+                    border-bottom: initial;
+                }
+                .nav-links{
+                    margin: 0;
+                    flex-direction: initial;
+                }
+            }
+            .info{
+                flex-direction: initial;
+                gap: 6em;
+                .socials{
+                    margin-left: auto;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+
+}
+
+//Galaxy Fold
+@media (min-width: 280px) and (max-width: 280px) {
+    header{
+        .container{
+            .logo{
+                a{
+                    img{
+                        width: 142px;
+                    }
+                }
+            }
+            .menu{
+                img{
+                    width: 75%;
+                }
+            }
+        }
+    }
+
+    #locations{
+        .container{
+            .country{
+                background-size: 14em;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+}

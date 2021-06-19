@@ -1,0 +1,373 @@
+* {
+  font-family: 'Jost', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  padding: 0 1.5em;
+  text-align: center;
+}
+
+header {
+  height: 14vh;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 100vh;
+}
+
+header .container .logo img {
+  width: 202px;
+  height: auto;
+}
+
+header .container nav {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 14vh;
+  height: 0;
+  overflow: hidden;
+}
+
+header .container nav .container {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  background-color: #333136;
+  gap: 1.5em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+header .container nav .container a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header .container nav .container .dropdownLinksActive {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+header .container .navActive {
+  height: 233px;
+}
+
+#hero {
+  background-color: #E7816B;
+  background-image: url(/assets/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: 41em;
+  background-position-x: -1em;
+  overflow: hidden;
+  height: 55em;
+}
+
+#hero .container .hero-text {
+  padding-top: 5em;
+}
+
+#hero .container .hero-text h1 {
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+
+#hero .container .hero-text p {
+  margin: 1.5em 0 3em;
+}
+
+#hero .container .hero-text h1, #hero .container .hero-text p {
+  color: white;
+}
+
+#hero .container .hero-text a {
+  border: none;
+  outline: none;
+  font-size: .9rem;
+  text-transform: uppercase;
+  padding: 1.2em 1em;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+
+#hero .container .phone img {
+  -webkit-transform: scale(2) translateY(5em);
+          transform: scale(2) translateY(5em);
+}
+
+#portfolio .container {
+  padding-top: 8em;
+  padding-bottom: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+#portfolio .container .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  height: 250px;
+  gap: .5em;
+}
+
+#portfolio .container .project h1 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+#portfolio .container .project h3 {
+  letter-spacing: 5px;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+#portfolio .container .project h3::after {
+  content: url(/assets/shared/desktop/icon-right-arrow.svg);
+  margin-left: 1em;
+}
+
+#portfolio .container .project, #portfolio .container h3 {
+  text-transform: uppercase;
+  color: white;
+}
+
+#portfolio .container .web {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.9))), url(/assets/home/mobile/image-web-design.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url(/assets/home/mobile/image-web-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#portfolio .container .app {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.9))), url(/assets/home/mobile/image-app-design.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url(/assets/home/mobile/image-app-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#portfolio .container .graphic {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.9))), url(/assets/home/mobile/image-graphic-design.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url(/assets/home/mobile/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#approach .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5em;
+}
+
+#approach .container .individual-approach {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/assets/home/desktop/bg-pattern-hero-home.svg);
+  background-position-y: top;
+  background-size: 13em;
+}
+
+#approach .container .individual-approach img {
+  width: 65%;
+  margin-bottom: 2em;
+}
+
+#approach .container .individual-approach h2 {
+  margin-bottom: 1em;
+  letter-spacing: 5px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#approach .container .individual-approach p {
+  color: #333136;
+}
+
+#get-in-touch {
+  position: relative;
+  top: 10em;
+}
+
+#get-in-touch .container .wrapper {
+  background-color: #E7816B;
+  background-image: url(/assets/shared/desktop/bg-pattern-call-to-action.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: 72em;
+  background-position-x: -20em;
+  padding: 3em 1.5em 4em;
+  border-radius: 15px;
+}
+
+#get-in-touch .container .wrapper .text {
+  margin-bottom: 3em;
+}
+
+#get-in-touch .container .wrapper .text h1, #get-in-touch .container .wrapper .text p {
+  color: white;
+}
+
+#get-in-touch .container .wrapper .text h1 {
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+#get-in-touch .container .wrapper a {
+  border: none;
+  outline: none;
+  font-size: .9rem;
+  text-transform: uppercase;
+  padding: 1.2em 1em;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1D1C1E;
+}
+
+footer .container {
+  padding-top: 15em;
+  padding-bottom: 4em;
+}
+
+footer .container .logo-and-links .footer-logo {
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+footer .container .logo-and-links .footer-logo a img {
+  width: 202px;
+  height: auto;
+}
+
+footer .container .logo-and-links .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+footer .container .logo-and-links .nav-links a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .87rem;
+}
+
+footer .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3em;
+  gap: 2em;
+}
+
+footer .container .info .address {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer .container .info .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */

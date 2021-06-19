@@ -1,0 +1,238 @@
+@import 'mixins&variables-contact';
+
+*{
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3{
+    font-weight: 500;
+}
+p{
+    font-weight: 400;
+    line-height: 1.6em;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.container{
+    padding: 0 1.5em;
+    text-align: center;
+}
+
+
+//////
+
+
+header{
+    height: 14vh;
+    .container{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+        max-height: 100vh;
+        .logo{
+            img{
+                width: 202px;
+                height: auto;
+            }
+        }
+        nav{
+            transition: all .5s ease-in-out;
+            position: absolute;
+            width: 100vw;
+            left: 0;
+            top: 14vh;
+            height: 0;
+            overflow: hidden;
+            .container{
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: initial;
+                background-color: $secondaryBlack;
+                gap: 1.5em;
+                padding-top: 2.5em;
+                padding-bottom: 2.5em;
+                a{
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-size: 1.5rem;
+                    pointer-events: none;
+                    opacity: 0;
+                    transition: all .5s ease-in-out;
+                } .dropdownLinksActive{
+                    opacity: 1;
+                    pointer-events: initial;
+                }
+            }
+        } .navActive{
+            height: 233px;
+        }
+    }
+}
+
+#contact-us{
+    background-color: $primaryPeach;
+    padding: 4em 0;
+    background-image: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+    @include bgPropeties;
+    background-position: -7em 0;
+    background-size: 56em;
+    .container{
+        .text{
+            margin-bottom: 3em;
+            color: white;
+            h1{
+                font-size: 2rem;
+                margin-bottom: 1em;
+            }
+            p{
+                color: $lightGrey;
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            .input-container{
+                position: relative;
+                input{
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid white;
+                    background: transparent;
+                    padding: 2em 1em 1em;
+                    height: 4em;
+                    outline: none;
+                    color: white;
+                    &::placeholder{
+                        color: hsla(0, 0%, 100%, .6);
+                        font-size: .9rem;
+                    }
+                    &:focus{
+                        border-bottom: 2px solid white;
+                    }
+                }
+                textarea{
+                    border: none;
+                    border-bottom: 1px solid white;
+                    background: transparent;
+                    padding: 2em 1em 1em;
+                    outline: none;
+                    color: white;
+                    width: 100%;
+                    &::placeholder{
+                        color: hsla(0, 0%, 100%, .6);
+                        font-size: .9rem;
+                    }
+                    &:focus{
+                        border-bottom: 2px solid white;
+                    }
+                }
+                span{
+                    position: absolute;
+                    right: 0;
+                    height: 100%;
+                    font-style: italic;
+                    font-size: .9rem;
+                    color: white;
+                    padding-top: 1.7em;
+                    display: none;
+                    &:last-child{
+                        padding-top: 2em;
+                    }
+                } .spanActive{
+                    display: initial;
+                }
+            }
+            #submit{
+                height: initial;
+                border: none;
+                width: 152px;
+                @include btn(black, white);
+                margin: 3em auto 0;
+            }
+        }
+    }
+}
+
+#locations{
+    padding: 7em 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 7em;
+        .country{
+            background-image: url(/assets/home/desktop/bg-pattern-hero-home.svg);
+            @include bgPropeties;
+            background-size: 15em;
+            background-position-y: 0;
+            img{
+                width: 70%;
+                margin: 0 auto;
+            }
+            h2{
+                letter-spacing: 5px;
+                font-size: 1.25rem;
+                text-transform: uppercase;
+                margin: 2em 0 3em;
+            }
+            a{
+                @include btn(white, $primaryPeach);
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $black;
+    .container{
+        padding-top: 5em;
+        padding-bottom: 4em;
+        .logo-and-links{
+            .footer-logo{
+                padding-bottom: 1.5em;
+                border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+                a{
+                    img{
+                        width: 202px;
+                        height: auto;
+                    }
+                }
+            }
+            .nav-links{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+                margin-top: 2em;
+                a{
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-size: .87rem;
+                }
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            margin-top: 3em;
+            gap: 2em;
+            .address{
+                color: hsla(0, 0%, 100%, .5);
+            }
+            .socials{
+                display: flex;
+                justify-content: center;
+                gap: 1em;
+                align-items: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,320 @@
+@import 'mixins&variables-location';
+
+@media (min-width: 1025px) {
+    
+    .img{
+        width: 100%;
+    }
+
+    header{
+        height: 25vh;
+        .container{
+            padding: 0 10.5em;
+            nav{
+                position: initial;
+                width: initial;
+                left: initial;
+                top: initial;
+                height: initial;
+                overflow: initial;
+                .container{
+                    padding: 0;
+                    text-align: initial;
+                    flex-direction: initial;
+                    background-color: transparent;
+                    a{
+                        color: $secondaryBlack;
+                        font-size: .9rem;
+                        pointer-events: initial;
+                        opacity: 1;
+                        &:hover{
+                            border-bottom: 1px solid hsla(0, 0%, 0%, .3);
+                            transition: none;
+                        }
+                    }
+                }
+            }
+            .menu{
+                display: none;
+            }
+        }
+    }
+
+#location{
+    padding: 0 10.5em;
+    .canada, .australia, .uk{
+        display: flex;
+        height: 326px;
+        gap: 2em;
+        flex-direction: row-reverse;
+        .img{
+            width: 350px;
+            border-radius: 20px;
+        }
+        .container{
+            background-image: url(/assets/shared/desktop/bg-pattern-two-circles.svg);
+            background-size: 34em;
+            background-position: 0 3.5em;
+            width: 730px;
+            text-align: left;
+            padding: 5em 6.5em;
+            border-radius: 20px;
+            .info{
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+    }
+    .australia{
+        flex-direction: row;
+    }
+}
+
+
+ 
+  #real-deal{
+      margin: 0 10.5em;
+      display: flex;
+      flex-direction: row-reverse;
+      .img{
+          height: 640px;
+          width: 476px;
+          border-radius: 0 20px 20px 0;
+          background-image: url(/assets/about/desktop/image-real-deal.jpg);
+      }
+      .text{
+        background-image: url(/assets/shared/desktop/bg-pattern-two-circles.svg);
+        background-position: 0 22em;
+        background-size: 36em;
+        padding: 0;
+        width: 635px;
+        border-radius: 20px 0 0 20px;
+        .container{
+            text-align: left;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin: 0 auto;
+            justify-content: center;
+            height: 100%;
+        }
+      }
+  }
+   
+    #get-in-touch{
+        .container{
+            padding: 0 10.5em;
+            .wrapper{
+                text-align: initial;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 4.5em;
+                padding-right: 4.5em;
+                background-position: 22em -6em;
+                background-size: 47em;
+                .text{
+                    margin: 0;
+                    width: 50%;
+                }
+                a{
+                    &:hover{
+                        color: white;
+                        background-color: $lightPeach;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .container{
+            padding-left: 10.5em;
+            padding-right: 10.5em;
+            text-align: initial;
+            .logo-and-links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+                padding-bottom: 2em;
+                .footer-logo{
+                    padding: 0;
+                    border-bottom: initial;
+                }
+                .nav-links{
+                    margin: 0;
+                    flex-direction: initial;
+                    a{
+                        &:hover{
+                            border-bottom: 1px solid hsla(0, 0%, 100%, .3);    
+                        }    
+                    }
+                }
+            }
+            .info{
+                flex-direction: initial;
+                gap: 6em;
+                .socials{
+                    margin-left: auto;
+                    align-items: flex-end;
+                    a{
+                        svg{
+                            &:hover{
+                                path{
+                                    fill: $lightPeach;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    header{
+        height: 15vh;
+        .container{
+            nav{
+                position: initial;
+                width: initial;
+                left: initial;
+                top: initial;
+                height: initial;
+                overflow: initial;
+                .container{
+                    padding: 0;
+                    text-align: initial;
+                    flex-direction: initial;
+                    background-color: transparent;
+                    a{
+                        color: $secondaryBlack;
+                        font-size: .9rem;
+                        pointer-events: initial;
+                        opacity: 1;
+                    }
+                }
+            }
+            .menu{
+                display: none;
+            }
+        }
+    }   
+
+    #hero{
+        margin: 0 1.5em;
+        .img{
+            border-radius: 20px 20px 0 0;
+            background-image: url(/assets/about/tablet/image-about-hero.jpg);
+        }
+        #about{
+            border-radius: 0 0 20px 20px;
+            .container{
+                padding: 0 4em;
+            }
+        }
+    }
+ 
+    #location{
+        margin: 0 1.5em;
+        gap: 8em;
+        .canada, .australia, .uk{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            .img{
+                border-radius: 20px;
+            }
+            .container{
+                text-align: left;
+                border-radius: 20px;
+                padding: 4em 5em;
+                background-image: url(/assets/shared/desktop/bg-pattern-two-circles.svg);
+                background-position: 0 bottom;
+                background-size: 33em;
+                .info{
+                    flex-direction: initial;
+                    gap: 6em;
+                }
+            }
+        }
+    }
+
+    #get-in-touch{
+        .container{
+            .wrapper{
+                padding: 3em 6em 4em;
+            }
+        }
+    }
+
+    
+    footer{
+        .container{
+            text-align: initial;
+            .logo-and-links{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+                padding-bottom: 2em;
+                .footer-logo{
+                    padding: 0;
+                    border-bottom: initial;
+                }
+                .nav-links{
+                    margin: 0;
+                    flex-direction: initial;
+                }
+            }
+            .info{
+                flex-direction: initial;
+                gap: 6em;
+                .socials{
+                    margin-left: auto;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+
+}
+
+//Galaxy Fold
+@media (min-width: 280px) and (max-width: 280px) {
+    header{
+        .container{
+            .logo{
+                a{
+                    img{
+                        width: 142px;
+                    }
+                }
+            }
+            .menu{
+                img{
+                    width: 75%;
+                }
+            }
+        }
+    }
+
+
+    #get-in-touch{
+        .container{
+            .wrapper{
+                .text{
+                    h1{
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
