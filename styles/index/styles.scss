@@ -80,7 +80,7 @@ header{
 
 #hero{
     background-color: $primaryPeach;
-    background-image: url(./assets/home/desktop/bg-pattern-hero-home.svg);
+    background-image: url(../../assets/home/desktop/bg-pattern-hero-home.svg);
     @include bgPropeties;
     background-size: 41em;
     background-position-x: -1em;
@@ -130,7 +130,7 @@ header{
                 font-size: .9rem;
                 font-weight: 400;
                 &::after{
-                    content: url(./assets/shared/desktop/icon-right-arrow.svg);
+                    content: url(../../assets/shared/desktop/icon-right-arrow.svg);
                     margin-left: 1em;
                 }
             }
@@ -140,15 +140,15 @@ header{
             color: white;
         }
         .web{
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url(./assets/home/mobile/image-web-design.jpg);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url(../../assets/home/mobile/image-web-design.jpg);
             @include bgPropeties();
         }
         .app{
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url(./assets/home/mobile/image-app-design.jpg);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url(../../assets/home/mobile/image-app-design.jpg);
             @include bgPropeties();
         }
         .graphic{
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url(./assets/home/mobile/image-graphic-design.jpg);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url(../../assets/home/mobile/image-graphic-design.jpg);
             @include bgPropeties();
         }
     }
